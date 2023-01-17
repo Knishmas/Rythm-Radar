@@ -84,9 +84,6 @@ app.get('/callback', (req,res) =>{
           res.redirect(`http://localhost:3000/?${queryParams}`);
   
         } else {
-          const test =  new URLSearchParams({
-            error: 'invalid_token '
-          });
           res.redirect(`/?${ new URLSearchParams({ error: 'invalid_token' })}`);
         }
       })
@@ -102,7 +99,7 @@ app.get('/refresh_token', (req, res) =>{
         method: 'post', 
         url: 'https://accounts.spotify.com/api/token',
         data:  new URLSearchParams({
-            grant_type: 'authorization_code',
+            grant_type: 'refresh_token',
             refresh_token: refresh_token
           }),
           headers: {
