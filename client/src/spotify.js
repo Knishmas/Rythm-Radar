@@ -73,7 +73,7 @@ const getAccessToken = () => {
       for (const property in queryParams) {
         window.localStorage.setItem(property, queryParams[property]);
       }
-      window.localStorage.setItem(LOCALSTORAGE_KEYS.timestamp, Date.now());
+      window.localStorge.setItem(LOCALSTORAGE_KEYS.timestamp, Date.now());
       return queryParams[LOCALSTORAGE_KEYS.accessToken];
     }
     return false;
