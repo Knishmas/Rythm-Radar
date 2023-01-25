@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { access_token, logout, getUserProfile } from './spotify';
+import { catchErrors } from './util';
 
 function App() {
   const [token,setToken] = useState(null);
@@ -12,17 +13,12 @@ function App() {
     setToken(access_token);
 
     const fetchData = async () =>{
-      try{
         const {data} = await getUserProfile();
         setProfile(data); 
-
         console.log(data);
-    } catch(e){
-      console.log(e);
-    }
   }
 
-  fetchData(); 
+    catchErrors(fetchData()); 
 
   }, []);
   
@@ -41,6 +37,22 @@ function App() {
           <>
           <h1>Logged in!</h1>
           <button onClick={logout}>Log Out! </button>
+          {profile && (
+            <div>
+              
+              <h1>
+                {profile.display_name}
+              </h1>
+              {profile.images.length && profile.images[0].url && (
+                <img src={profile.images[0].url} alt="Profile Image" />
+              )} 
+              <p>
+                {profile.followers.total} Followers
+              </p>
+              <p>Spotify plan: {profile.product}</p>
+              
+            </div>
+          )}
           </>
         )}
   
