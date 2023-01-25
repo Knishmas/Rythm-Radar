@@ -93,9 +93,9 @@ const getAccessToken = () => {
 export const access_token = getAccessToken(); 
 
 //Axios flobal request headers
-axios.defaults.baseURL = 'https://api.spotify.com/v1'; 
-axios.defaults.headers['Authorization'] = 'Bearer ${accessToken}'; 
-axios.defaults.headers['Content-Type'] = 'application/json'; 
+axios.defaults.baseURL = 'https://api.spotify.com/v1';
+axios.defaults.headers['Authorization'] = `Bearer ${access_token}`;
+axios.defaults.headers['Content-Type'] = 'application/json';
 
 //Getting current users profile
 export const getUserProfile = () => axios.get('/me');
