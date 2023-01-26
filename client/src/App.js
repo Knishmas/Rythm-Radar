@@ -4,6 +4,7 @@ import './App.css';
 import { access_token, logout, getUserProfile } from './spotify';
 import { catchErrors } from './util';
 import {BrowserRouter as Router, Routes, Route, Link, useLocation} from "react-router-dom";
+import Login from './Pages/Login';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,11 +36,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {!token ? (
-          <a 
-          className='App-link'
-          href="http://localhost:8888/login">
-             Login into spotify 
-          </a>
+          <Login/>
         ) : (
           <Router>
             <ScrollToTop/>
