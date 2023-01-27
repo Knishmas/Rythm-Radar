@@ -4,7 +4,7 @@ import './App.css';
 import { access_token, logout, getUserProfile } from './spotify';
 import { catchErrors } from './util';
 import {BrowserRouter as Router, Routes, Route, Link, useLocation} from "react-router-dom";
-import Login from './Pages/Login';
+import {Login,Profile} from './Pages';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -51,19 +51,7 @@ function App() {
               <Route path="/playlists" element={<h1>Playlists</h1>}>
               </Route>
               <Route path="/" element={
-                 <>
-                 <button onClick={logout}>Log Out</button>
-
-                 {profile && (
-                   <div>
-                     <h1>{profile.display_name}</h1>
-                     <p>{profile.followers.total} Followers</p>
-                     {profile.images.length && profile.images[0].url && (
-                       <img src={profile.images[0].url} alt="Avatar"/>
-                     )}
-                   </div>
-                 )}
-               </>
+                <Profile/>
               }>
                
               </Route>

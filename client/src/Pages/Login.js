@@ -11,7 +11,7 @@ function Login() {
                 Login into spotify 
             </a>
         </button> */}
-        <Button className ="button" href="http://localhost:8888/login" descriptor="Login" />
+        <Button href="http://localhost:8888/login" descriptor="Login" />
     </div>
   )
 }
