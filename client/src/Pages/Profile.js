@@ -36,6 +36,7 @@ useEffect(() => {
                   <br />
                     {profile.followers.total} Follower{profile.followers.total !== 1 ? 's' : ''}
                 </p>
+                <h3>Top Artists</h3>
             </div>
         )}
     </>
