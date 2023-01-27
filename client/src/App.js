@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { access_token, logout, getUserProfile } from './spotify';
 import { catchErrors } from './util';
@@ -38,6 +37,8 @@ function App() {
         {!token ? (
           <Login/>
         ) : (
+          <>
+          <button onClick={logout}>Log Out</button>
           <Router>
             <ScrollToTop/>
             <Routes>
@@ -57,8 +58,9 @@ function App() {
               </Route>
             </Routes>
           </Router>
+          </>
         )}
-  
+          
       </header>
     </div>
   );
