@@ -104,3 +104,7 @@ export const getUserProfile = () => axios.get('/me');
 export const getUserPlaylists = (limit = 20) => {
   return axios.get(`/me/playlists?limit=${limit}`); 
 }
+
+export const getUserTopArtists = (time_range = 'long_term') => {
+return axios.get(`/me/top/artists?time_range=${time_range}`);
+}
