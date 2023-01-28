@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { catchErrors } from '../util'
 import { getUserProfile, getUserPlaylists, getUserTopArtists} from '../spotify'
+import { ArtistsGrid } from '../Components'
 
 const Profile = () => {
 const [profile, setProfile] = useState(null);
@@ -36,8 +37,12 @@ useEffect(() => {
                   <br />
                     {profile.followers.total} Follower{profile.followers.total !== 1 ? 's' : ''}
                 </p>
-                <h3>Top Artists</h3>
             </div>
+        )}
+        {topArtists && (
+            <main>
+                <ArtistsGrid artists={topArtists.items.slice()}/>
+            </main>
         )}
     </>
   )

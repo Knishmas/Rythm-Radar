@@ -37,11 +37,11 @@ app.get('/login', (req,res) =>{
     const state = generateRandomString(16);
     res.cookie(stateKey,state);
 
-    const scope =  [
+    const scope = [
       'user-read-private',
       'user-read-email',
       'user-top-read',
-    ].join(' '); 
+    ].join(' ');
 
     const searchparams = new URLSearchParams({
 
@@ -79,7 +79,6 @@ app.get('/callback', (req,res) =>{
       .then(response => {
         if (response.status === 200) {
           const { access_token, refresh_token, expires_in } = response.data;
-  
           const queryParams = new URLSearchParams({
             access_token: access_token,
             refresh_token: refresh_token,
