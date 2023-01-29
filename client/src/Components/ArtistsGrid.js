@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Card from './Card';
 const ArtistsGrid = ({artists}) => (
 
   <>
@@ -7,8 +7,7 @@ const ArtistsGrid = ({artists}) => (
       <div>
         {artists.map((artist) => (
           <>
-            <h3>{artist.name}</h3>
-            <img src={artist.images[0].url} alt={artist.name} />
+            <Card name={artist.name} image={artist.images[0].url}/>
            </>
       
      ))}

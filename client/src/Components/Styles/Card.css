@@ -1,0 +1,11 @@
+.card-container{
+    width: 300px;
+    height: 350px;
+    background-color: #FE346E;
+    border-radius: 1rem;
+}
+
+.artist-pic{
+    width: 150px;
+    height: 150px;
+}
