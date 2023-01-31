@@ -41,7 +41,9 @@ useEffect(() => {
         )}
         {topArtists && (
             <main>
-                <ArtistsGrid artists={topArtists.items.slice()}/>
+                <div className="artist-section">
+                  <ArtistsGrid  className = 'test' artists={topArtists.items.slice()}/>
+                </div>
             </main>
         )}
     </>

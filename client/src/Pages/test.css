@@ -1,0 +1,7 @@
+.artist-section{
+    display: grid;
+    background-color: black;
+    grid-template-columns: (4, 300px);
+    grid-auto-rows: minmax(250, auto);
+    
+}

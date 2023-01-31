@@ -1,11 +1,17 @@
 .card-container{
-    width: 300px;
-    height: 350px;
+    
+    /* width: 300px;
+    height: 350px; */
     background-color: #FE346E;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .artist-pic{
     width: 150px;
     height: 150px;
 }
+
