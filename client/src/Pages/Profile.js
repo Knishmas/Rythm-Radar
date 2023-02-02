@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { catchErrors } from '../util'
 import { getUserProfile, getUserPlaylists, getUserTopArtists} from '../spotify'
-import { ArtistsGrid } from '../Components'
+import { ArtistsGrid, SectionWrapper } from '../Components'
 
 const Profile = () => {
 const [profile, setProfile] = useState(null);
@@ -41,9 +41,11 @@ useEffect(() => {
         )}
         {topArtists && (
             <main>
-                <div className="artist-section">
-                  <ArtistsGrid  className = 'test' artists={topArtists.items.slice()}/>
-                </div>
+                
+                  <SectionWrapper title="Top artists this month" seeAllLink="/top-artists">
+                   <ArtistsGrid  className = 'test' artists={topArtists.items.slice(0,8)}/>
+                  </SectionWrapper>
+                
             </main>
         )}
     </>

@@ -1,0 +1,36 @@
+
+  .section__inner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+.section__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+  }
+
+.section__heading {
+    display: flex;
+    margin: 0;
+  }
+.section__title{
+text-decoration: none;
+color: black;
+font-size: 2.5rem;
+}
+  .section__breadcrumb {
+    display: flex;
+  }
+
+  .section__see-all {
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-bottom: 2px;
+    text-decoration: none;
+  }
