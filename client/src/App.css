@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -9,18 +12,27 @@
 
 
 .App-header {
-  background-color: #301E67;
+  background-color: #121212;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: white; */
+  color: #fff;
 }
 
 .App-link {
   /* color: #61dafb; */
+}
+.logout-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.profile-picture {
+  mask-image: url(./Assets/blob.svg);
 }
 
 @keyframes App-logo-spin {

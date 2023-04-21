@@ -1,20 +1,37 @@
-.card-container{
-    
-    /* width: 300px;
-    height: 350px; */
-    background-color: #FE346E;
-    border-radius: 1rem;
+.card-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-}
-h1{
-    font-size: 2.5rem;
-}
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #FE346E;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .artist-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  
+  .artist-name {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  
 
-.artist-pic{
-    width: 150px;
-    height: 150px;
-}
 
+
+
+ 

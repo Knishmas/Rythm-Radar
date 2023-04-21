@@ -38,7 +38,9 @@ function App() {
           <Login/>
         ) : (
           <>
-          <button onClick={logout}>Log Out</button>
+         <div className="logout-container">
+  <button className="logout" onClick={logout}>Log Out</button>
+</div>
           <Router>
             <ScrollToTop/>
             <Routes>

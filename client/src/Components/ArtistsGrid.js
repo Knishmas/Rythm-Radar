@@ -8,7 +8,7 @@ const ArtistsGrid = ({artists}) => (
       <div className="grid">
         {artists.map((artist) => (
           <>
-            <Card name={artist.name} image={artist.images[0].url}/>
+            <Card image={artist.images[0].url} name={artist.name}/>
            </>
       
      ))}
