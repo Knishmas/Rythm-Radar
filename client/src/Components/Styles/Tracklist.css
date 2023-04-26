@@ -1,0 +1,24 @@
+.StyledTrackList{
+  background-color: black;
+  border-radius: 5px;
+}
+.track__item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #FE346E;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.track__item__title-group{
+    display: flex;
+    font-size: 0.5em;
+}
+
+.track__item__album{
+    font-size: 0.5em;
+}
+
+.track__item__name{
+    font-size: 1em;
+}

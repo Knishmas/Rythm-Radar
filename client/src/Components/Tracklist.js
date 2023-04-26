@@ -36,7 +36,7 @@ const TrackList = ({ tracks }) => (
           </li>
         ))}
       </>
-    ) : (
+    ) : ( //If tracks prop is undefined/null or if tracks has a length of 0
       <p className="empty-notice">No tracks available</p>
     )}
   </div>
