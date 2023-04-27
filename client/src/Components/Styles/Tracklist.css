@@ -12,13 +12,27 @@
 
 .track__item__title-group{
     display: flex;
-    font-size: 0.5em;
+    float: left;
+    /* background-color: aquamarine; */
 }
 
 .track__item__album{
     font-size: 0.5em;
 }
+.track__item__artist{
+    font-size: 0.5em;
+}
 
 .track__item__name{
-    font-size: 1em;
+    font-size: 0.7em;
+}
+.track__item__num{
+    font-size: 0.5em;
+}
+.track__item__duration{
+    font-size: 0.5em;
+}
+.track__item__name-artist{
+    /* background-color: antiquewhite; */
+    margin: 0px 10px;
 }
