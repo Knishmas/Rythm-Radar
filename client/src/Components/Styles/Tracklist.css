@@ -1,38 +1,57 @@
 .StyledTrackList{
-  background-color: black;
-  border-radius: 5px;
-}
-.track__item{
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .track__item{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 50px 1fr 1fr 100px 50px;
+    align-items: center;
     background-color: #FE346E;
     border-radius: 10px;
-    margin: 10px 10px;
-}
-
-.track__item__title-group{
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .track__item__title-group{
     display: flex;
-    float: left;
-    /* background-color: aquamarine; */
-}
-
-.track__item__album{
-    font-size: 0.5em;
-}
-.track__item__artist{
-    font-size: 0.5em;
-}
-
-.track__item__name{
-    font-size: 0.7em;
-}
-.track__item__num{
-    font-size: 0.5em;
-}
-.track__item__duration{
-    font-size: 0.5em;
-}
-.track__item__name-artist{
-    /* background-color: antiquewhite; */
-    margin: 0px 10px;
-}
+  }
+  .track__item__num{
+    font-size: 0.6em;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .track__item__img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .track__item__name{
+    font-size: 0.6em;
+    font-weight: bold;
+    color: white;
+  }
+  .track__item__name-artist{
+    padding-left: 15px;
+  }
+  
+  .track__item__artist{
+    font-size: 0.4em;
+    color: white;
+  }
+  
+  .track__item__album{
+    font-size: 0.4em;
+    color: white;
+  }
+  
+  .track__item__duration{
+    font-size: 0.4em;
+    text-align: right;
+    color: white;
+  }
+  
