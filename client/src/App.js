@@ -3,7 +3,7 @@ import './App.css';
 import { access_token, logout, getUserProfile } from './spotify';
 import { catchErrors } from './util';
 import {BrowserRouter as Router, Routes, Route, Link, useLocation} from "react-router-dom";
-import {Login,Profile} from './Pages';
+import {Login,Profile,TopArtists} from './Pages';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,7 +44,9 @@ function App() {
           <Router>
             <ScrollToTop/>
             <Routes>
-              <Route path="/top-artists" element={<h1>Top Artists</h1>}>
+              <Route path="/top-artists" element={
+                <TopArtists/>
+              }>
                 
               </Route>
               <Route path="/top-tracks" element={<h1>Top Tracks</h1>}>
