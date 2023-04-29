@@ -9,15 +9,21 @@ const TopArtists = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const userTopArtists  = await getUserTopArtists();
+      const userTopArtists  = await getUserTopArtists(`${activeRange}_term`);
       setTopArtists(userTopArtists.data);
     };
 
     catchErrors(fetchData());
-  }, []);
+  }, [activeRange]);
 
   return (
+    
     <main>
+        <ul>
+            <li><button onClick={() => setActiveRange('short')} > This month</button> </li>
+            <li><button onClick={() => setActiveRange('medium')} > last 6 months</button> </li>
+            <li><button onClick={() => setActiveRange('long')}> All time</button> </li>
+        </ul>
       <SectionWrapper title="Top Artists this month" breadcrumb={true}>
         {topArtists && topArtists.items && (
           <ArtistsGrid artists={topArtists.items} />
