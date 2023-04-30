@@ -3,7 +3,7 @@ import './Styles/Button.css';
 
 const TimeRangeButtons = ({ activeRange, setActiveRange }) => {
   return (
-    <>
+    <ul className='time-range-buttons'>
       <li>
         <button
           className={activeRange === 'short' ? 'active' : ''}
@@ -25,7 +25,7 @@ const TimeRangeButtons = ({ activeRange, setActiveRange }) => {
           All Time
         </button>
       </li>
-    </>
+    </ul>
   );
 };
 

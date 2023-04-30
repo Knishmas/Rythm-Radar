@@ -13,6 +13,23 @@
     padding: var(--spacing-xl) var(--spacing-xxl);
   }
 }
+/* li{
+  list-style: none;
+}
+li button {
+  display: inline-block;
+  margin: 0 5px;
+  float: right;
+
+} */
+.time-range-buttons{
+  background-color: bisque;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .section__top {
   width: 100%;

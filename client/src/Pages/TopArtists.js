@@ -19,8 +19,8 @@ const TopArtists = () => {
   return (
     
     <main>
-        <TimeRangeButtons activeRange={activeRange} setActiveRange={setActiveRange}/>
       <SectionWrapper title="Top Artists this month" breadcrumb={true}>
+      <TimeRangeButtons activeRange={activeRange} setActiveRange={setActiveRange}/>
         {topArtists && topArtists.items && (
           <ArtistsGrid artists={topArtists.items} />
         )}
