@@ -26,7 +26,7 @@
   /* color: #61dafb; */
 }
 .logout-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   padding: 20px;
