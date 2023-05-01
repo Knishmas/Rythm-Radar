@@ -20,7 +20,9 @@ const TopArtists = () => {
     
     <main>
       <SectionWrapper title="Top Artists this month" breadcrumb={true}>
+      <div className="buttons-container">
       <TimeRangeButtons activeRange={activeRange} setActiveRange={setActiveRange}/>
+      </div>
         {topArtists && topArtists.items && (
           <ArtistsGrid artists={topArtists.items} />
         )}

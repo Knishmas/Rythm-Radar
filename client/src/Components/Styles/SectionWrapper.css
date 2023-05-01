@@ -1,6 +1,5 @@
 
 .section__inner {
-  max-width: 40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -22,8 +21,17 @@ li button {
   float: right;
 
 } */
+.buttons-container{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* added */
+  top: 0; /* added */
+  right: 0; /* added */
+}
 .time-range-buttons{
-  background-color: bisque;
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -35,8 +43,9 @@ li button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start; /* updated */
   margin-bottom: 1.5rem;
+  position: relative; /* updated */
 }
 
 .section__heading {
@@ -51,6 +60,7 @@ font-size: 2.5rem;
 }
 .section__breadcrumb {
   display: flex;
+  justify-content: space-between;
   color: var(--light-grey);
 }
 
@@ -64,4 +74,11 @@ font-size: 2.5rem;
   letter-spacing: 0.1em;
   padding-bottom: 2px;
   text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.profile_link{
+  font-weight: 900px;
 }

@@ -8,7 +8,9 @@ const SectionWrapper = ({ children, title, seeAllLink, breadcrumb }) => (
         <h2 className="section__heading">
           {breadcrumb && ( 
             <span className="section__breadcrumb">
-              <Link to="/">Profile</Link>
+              
+              <Link to="/" className='profile_link'>Profile</Link>
+              /
             </span>
           )}
           {title && (

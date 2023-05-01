@@ -19,7 +19,9 @@ const TopTracks = () => {
   return (
     <main>
       <SectionWrapper title="Top Tracks this month" breadcrumb={true}>
+      <div className="buttons-container">
       <TimeRangeButtons activeRange={activeRange} setActiveRange={setActiveRange}/>
+      </div>
         {topTracks && topTracks.items && (
         <Tracklist tracks={topTracks.items} />
         )}
