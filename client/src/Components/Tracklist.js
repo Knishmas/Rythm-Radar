@@ -20,9 +20,9 @@ const TrackList = ({ tracks }) => (
                 </div>
                 <div className="track__item__artist overflow-ellipsis">
                   {track.artists.map((artist, i) => (
-                    <span key={i}>
+                    <div key={i}>
                       {artist.name}{i !== track.artists.length - 1 && ', '}
-                    </span>
+                    </div>
                   ))}
                 </div>
               </div>

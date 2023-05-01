@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
    /* adjust the grid gap to 20px to maintain the same gap between cards */
-  max-width: 1500px; /* adjust the max-width to fit 5 cards per row */
+  width: 50vw; /* adjust the max-width to fit 5 cards per row */
   margin: 0 auto; /* center the grid horizontally */
   border-radius: 5px;
 }
