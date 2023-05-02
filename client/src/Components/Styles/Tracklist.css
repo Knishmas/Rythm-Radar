@@ -32,6 +32,7 @@
   }
   
   .track__item__name{
+    text-align: left;
     font-size: 0.6em;
     font-weight: bold;
     color: white;
@@ -41,6 +42,7 @@
   }
   
   .track__item__artist{
+    text-align: left;
     font-size: 0.4em;
     color: white;
   }
@@ -55,4 +57,7 @@
     text-align: right;
     color: white;
   }
-  
+  .track__item__name, .track__item__artist {
+    margin: 0;
+    padding: 0;
+  }
