@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { getUserTopArtists } from '../spotify';
-import { catchErrors } from '../util';
+import React from 'react';
 
-const Collage = () => {
-    return (
-        <h1>Collage is working!</h1>
-    );
+function Collage() {
+  return (
+    <div>
+      <h1>Collage page is working</h1>
+    </div>
+  );
 }
 
-export default Collage; 
+export default Collage;
