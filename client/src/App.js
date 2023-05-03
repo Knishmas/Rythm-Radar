@@ -53,9 +53,7 @@ function App() {
                 <TopTracks/>
               }>
               </Route>
-              <Route path="/playlists/:id" element={<h1>Playlist</h1>}>
-              </Route>
-              <Route path="/playlists" element={<h1>Playlists</h1>}>
+              <Route path="/collage" element={<h1>collage</h1>}>
               </Route>
               <Route path="/" element={
                 <Profile/>
