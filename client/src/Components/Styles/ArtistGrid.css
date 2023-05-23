@@ -2,8 +2,14 @@
   background-color: black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-   /* adjust the grid gap to 20px to maintain the same gap between cards */
-  width: 50vw; /* adjust the max-width to fit 5 cards per row */
-  margin: 0 auto; /* center the grid horizontally */
+  width: 50vw;
+  margin: 0 auto;
   border-radius: 5px;
+  grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

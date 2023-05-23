@@ -18,22 +18,31 @@ const Collage = () =>{
     return artist.images[0].url;
   });
 
-  const imageStyles = images?.map(() => {
-    const size = Math.floor(Math.random() * 300 + 100); // b/w 100 and 400
+  const containerStyle = {
+    width: '600px',
+    height: '600px',
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
 
-  
+  const imageStyle = (index) => {
+    const size = `${100 - index * 5}%`;
     return {
-      width: `${size}px`,
-      height: `${size}px`,
+      width: size,
+      height: size,
+      boxSizing: 'border-box',
+      border: '2px solid white',
+      overflow: 'hidden'
     };
-  });
+  };
 
   return (
     <div>
       <h1>collage is working</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div style={containerStyle}>
         {images && images.map((image, index) => (
-          <img key={index} src={image} style={imageStyles[index]} alt={`Image ${index}`} />
+          <div key={index} style={{ ...imageStyle(index), backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
+          </div>
         ))}
       </div>
     </div>
