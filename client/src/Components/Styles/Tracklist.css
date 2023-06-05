@@ -15,6 +15,17 @@
     padding: 10px;
     overflow: hidden;
   }
+  @media (max-width: 600px) {
+    .track__item__title-group{
+      display: flex;
+      flex-direction: column;
+    }
+    .track__item{
+      display: flex;
+      flex-direction: column;
+      }
+  }
+  
   .track__item__title-group{
     display: flex;
   }
@@ -62,3 +73,4 @@
     margin: 0;
     padding: 0;
   }
+
