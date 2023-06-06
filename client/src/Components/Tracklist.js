@@ -13,12 +13,12 @@ const TrackList = ({ tracks }) => (
                 <div className="track__item__img">
                   <img src={track.album.images[2].url} alt={track.name} />
                 </div>
-              )}
+              )} 
               <div className="track__item__name-artist">
-                <div className="track__item__name overflow-ellipsis">
+                <div className="track__item__name">
                   {track.name}
                 </div>
-                <div className="track__item__artist overflow-ellipsis">
+                <div className="track__item__artist">
                   {track.artists.map((artist, i) => (
                     <span key={i}>
                       {artist.name}{i !== track.artists.length - 1 && ', '}
@@ -27,7 +27,7 @@ const TrackList = ({ tracks }) => (
                 </div>
               </div>
             </div>
-            <div className="track__item__album overflow-ellipsis">
+            <div className="track__item__album">
               {track.album.name}
             </div>
             <div className="track__item__duration">
