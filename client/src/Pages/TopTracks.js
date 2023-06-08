@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getUserTopTracks } from '../spotify';
 import { catchErrors } from '../util';
 import { Tracklist, SectionWrapper, TimeRangeButtons} from '../Components';
+import '../Components/Styles/TopTracks.css';
 
 const TopTracks = () => {
   const [topTracks, setTopTracks] = useState(null);

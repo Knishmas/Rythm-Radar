@@ -13,7 +13,7 @@ const TrackList = ({ tracks }) => (
                 <div className="track__item__img">
                   <img src={track.album.images[2].url} alt={track.name} />
                 </div>
-              )} 
+              )}
               <div className="track__item__name-artist">
                 <div className="track__item__name">
                   {track.name}
