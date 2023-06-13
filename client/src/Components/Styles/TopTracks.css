@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+/* @media (max-width: 1400px) {
     .buttons-container {
         display: flex;
         flex-direction: column;
@@ -11,5 +11,9 @@
         font-size: 1rem;
         margin-bottom: 0.5rem;
       }
-  }
+  } */
+
+.section__heading{
+  font-size: 1rem;
+}
   

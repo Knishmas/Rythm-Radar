@@ -95,7 +95,7 @@ a{
     }
 } */
 
-@media (max-width: 1130px) {
+@media (max-width: 1200px) {
   .time-range-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -126,5 +126,8 @@ a{
   }
   .section__top {
     margin-bottom: 0.3rem;
+  }
+  .section__title{
+    text-align: left;
   }
 }
