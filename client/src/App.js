@@ -18,17 +18,17 @@ function ScrollToTop() {
 function App() {
   const [token,setToken] = useState(null);
   const [profile,setProfile] = useState(null);
+//ezplain the code in comments
 
   useEffect(() => {
     setToken(access_token);
-
     const fetchData = async () =>{
         const {data} = await getUserProfile();
         setProfile(data); 
         console.log(data);
   }
     catchErrors(fetchData());  
-  }, []);
+  }, [token]);
   
 
   return (
