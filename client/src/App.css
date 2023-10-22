@@ -33,8 +33,7 @@
 }
 .profile-picture {
   mask-image: url(./Assets/blob.svg);
-  max-width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 @keyframes App-logo-spin {
