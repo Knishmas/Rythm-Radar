@@ -8,6 +8,13 @@ Rhythm Radar is a web application developed using React and Spotify's API. It al
 - Ability to select between 3 different time periods for your information. (1 month, 6 months, or all time)
 - Automatic refresh of user tokens upon expiration for seamless access to the application
 
+# Demo 
+
+https://github.com/Knishmas/Rythm-Radar/assets/67484551/ffae5499-983b-485b-bf8b-8d90d36c2470
+
+
+
+
 # Requirements
 
 - Node.js
