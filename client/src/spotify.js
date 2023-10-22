@@ -92,8 +92,9 @@ const getAccessToken = () => {
         window.localStorage.setItem(property, queryParams[property]);
       }
       //timestamping 
-      window.localStorge.setItem(LOCALSTORAGE_KEYS.timestamp, Date.now());
-      //returning the access token from query params. 
+
+       window.localStorage.setItem(LOCALSTORAGE_KEYS.timestamp, Date.now());
+       console.log("Log: " + LOCALSTORAGE_KEYS.timestamp);//returning the access token from query params. 
       return queryParams[LOCALSTORAGE_KEYS.accessToken];
     }
     return false;
